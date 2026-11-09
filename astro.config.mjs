@@ -11,25 +11,25 @@ export default defineConfig({
 	fonts: [
 		{
 			provider: fontProviders.local(),
-			name: 'Atkinson',
-			cssVariable: '--font-atkinson',
+			name: 'Fredoka',
+			cssVariable: '--font-fredoka',
 			fallbacks: ['sans-serif'],
 			options: {
 				variants: [
 					{
-						src: ['./src/assets/fonts/atkinson-regular.woff'],
+						src: ['./src/assets/fonts/fredoka-regular.woff'],
 						weight: 400,
 						style: 'normal',
 						display: 'swap',
 					},
 					{
-						src: ['./src/assets/fonts/atkinson-bold.woff'],
+						src: ['./src/assets/fonts/fredoka-bold.woff'],
 						weight: 700,
 						style: 'normal',
 						display: 'swap',
 					},
 				],
 			},
-		},
+		}
 	],
 });
