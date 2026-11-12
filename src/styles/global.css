@@ -154,6 +154,7 @@ hr {
 
 .button:hover {
 	background-color: var(--accent-dark);
+	color: var(--black)
 }
 
 .button:focus-visible {

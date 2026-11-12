@@ -13,26 +13,47 @@ import "../styles/global.css"
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       h1 {text-align: center;}
+
+      .resume-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+      }
+
     </style>
   </head>
 	<body>
 		<Header />
 		<main>
 			<h1>My Résumé</h1>
-      <a
-      class="button"
-      href="/pdfs/sample-resume.pdf"
-      download="sample-resume.pdf"
+      <div
+      class="resume-actions"
       >
-        Download resume (PDF)
-      </a>
+        <a
+        class="button"
+        href="/pdfs/sample-resume.pdf"
+        download="sample-resume.pdf"
+        >
+          Download Résumé (PDF)
+        </a>
+
+        <a class="button" href="/pdfs/sample-resume.pdf" target="_blank">
+          Open Résumé in New Tab
+        </a>
+      </div>
       <iframe
         src={pdfUrl}
         title="Guide PDF"
         width="100%"
         height="1000"
         style="border: none;"
-      ></iframe>
+      >
+      </iframe>
 		</main>
 		<Footer />
 	</body>
