@@ -3,6 +3,7 @@ const today = new Date();
 import PixelLinkedIn from '../assets/icons/PixelLinkedin.svg';
 import PixelGithub from '../assets/icons/PixelGithub.svg';
 import PixelEnvelope from '../assets/icons/PixelEnvelope.svg';
+import MadebyHumanBadge from '../assets/icons/AuthoredByAHumanBlack.svg';
 ---
 
 <footer>
@@ -19,6 +20,12 @@ import PixelEnvelope from '../assets/icons/PixelEnvelope.svg';
 		<a href="mailto:business@rxy.network" target="_blank">
 			<span class="sr-only">Open Email in Client</span>
 			<PixelEnvelope viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
+		</a>
+	</div>
+	<div class="not-by-ai-badge">
+		<a href="https://notbyai.fyi">
+			<span class="sr-only">Written by a Human, Not by AI</span>
+			<MadebyHumanBadge />
 		</a>
 	</div>
 </footer>
@@ -42,4 +49,12 @@ import PixelEnvelope from '../assets/icons/PixelEnvelope.svg';
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
 	}
+
+	.not-by-ai-badge {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+
 </style>
