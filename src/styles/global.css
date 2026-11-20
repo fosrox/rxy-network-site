@@ -21,8 +21,6 @@
 }
 body {
 	font-family: var(--font-fredoka);
-	cursor:text url('../assets/icons/PixelarticonsTextCursor.ico'), default;
-	cursor: url('../assets/icons/PixelarticonsCursorMinimal.ico'), default;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -160,10 +158,75 @@ hr {
 
 .button:hover {
 	background-color: var(--accent-dark);
-	color: var(--white)
+	color: var(--white);
 }
 
 .button:focus-visible {
 	outline: 3px solid var(--accent);
 	outline-offset: 3px;
+}
+
+/* custom cursors */
+
+body,
+html {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_point.svg") 1 1, default;
+}
+
+a[href],
+button,
+summary,
+[role="button"],
+input[type="button"],
+input[type="submit"] {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_link.svg") 11 5, pointer;
+}
+
+:where(
+  p, h1, h2, h3, h4, h5, h6,
+  li, dt, dd,
+  blockquote, figcaption,
+  td, th,
+  label,
+  pre, code,
+  input:not([type]),
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="password"],
+  textarea,
+  [contenteditable="true"],
+  .text-cursor
+) {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_text_new.svg") 16 16, text;
+}
+
+.is-draggable {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_move.svg") 1 1, grab;
+}
+
+.is-dragging {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_move.svg") 1 1, grabbing;
+}
+
+.is-loading {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_load.svg") 1 1, wait;
+}
+
+.resize-horizontal {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_horiz.svg") 1 1, ew-resize;
+}
+
+.resize-vertical {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_vert.svg") 1 1, ns-resize;
+}
+
+button:disabled,
+input:disabled,
+textarea:disabled,
+select:disabled,
+[aria-disabled="true"] {
+	cursor: url("../assets/icons/cursors/pixel_cursor_svg/pixel_forbid.svg") 1 1, not-allowed;
 }
