@@ -1,9 +1,10 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-import PixelLinkedIn from '../assets/icons/PixelLinkedin.svg';
-import PixelGithub from '../assets/icons/PixelGithub.svg';
-import PixelEnvelope from '../assets/icons/PixelEnvelope.svg';
+import LinkedInLogo from '../assets/icons/LinkedInLogo_32x32.svg';
+import GithubLogo from '../assets/icons/GithubLogo_24x24.svg';
+import EnvelopeSymbol from '../assets/icons/PixelEnvelope_32x32.svg';
+import CodebergLogo from '../assets/icons/CodebergLogo_24x24.svg';
 ---
 
 <header>
@@ -20,15 +21,19 @@ import PixelEnvelope from '../assets/icons/PixelEnvelope.svg';
 		<div class="social-links">
 			<a href="https://github.com/fosrox" target="_blank">
 				<span class="sr-only">Go to my Github Profile</span>
-				<PixelGithub viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
+				<GithubLogo viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
+			</a>
+			<a href="https://codeberg.org/fosrox" target="_blank">
+				<span class="sr-only">Go to my Codeberg Profile</span>
+				<CodebergLogo viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
 			</a>
 			<a href="https://www.linkedin.com/in/joshua-fosness-18001a450" target="_blank">
 				<span class="sr-only">Go to my Linkedin Profile</span>
-				<PixelLinkedIn viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
+				<LinkedInLogo viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
 			</a>
 			<a href="mailto:business@rxy.network" target="_blank">
 				<span class="sr-only">Open Email in Client</span>
-				<PixelEnvelope viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
+				<EnvelopeSymbol viewBox={"0 0 24 24"} width={40} height={40} fill={"currentColor"} />
 			</a>
 		</div>
 	</nav>
